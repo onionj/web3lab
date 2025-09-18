@@ -13,7 +13,7 @@ contract HateERC20 is ERC20, ERC20Burnable, Ownable, ERC20Permit {
         Ownable(initialOwner)
         ERC20Permit("IHateYou")
     {
-        _mint(initialOwner, 10000 * 10 ** decimals());
+        _mint(initialOwner, 100000 * 10 ** decimals());
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
